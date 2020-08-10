@@ -69,3 +69,21 @@ app.use(express.static('public'));
 <p>id: <%=item.id%></p>
 <p>name: <%=item.name%></p>
 ```
+
+* Advatanges of EJS in HTML
+
+```
+<% const items = [
+          {id: 1, name: 'potatoes'},
+          {id: 2, name: 'carrots'},
+          {id: 3, name: 'onions'}
+        ]; %>
+<% items.forEach((item) => { %>
+    <li>
+        <span><%= item.id%></span>
+        <span><%= item.name%></span>
+    </li>
+<% }); %>
+```
+
+
