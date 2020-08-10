@@ -5,7 +5,7 @@ $npm init
 $npm install
 $npm install express
 $npm install ejs
-$node app.py
+$node app.js
 ```
 
 ### Routing
@@ -41,4 +41,31 @@ app.use(express.static('public'));
 
 
 <img src="/images/top.png">
+```
+
+### Embedded Javascript in HTML , EJS
+
+* define variable as it wont be displayed
+```
+<% %>
+```
+```
+// index.ejs
+
+<% const item={id:3, name:'onions'} %>
+<p>id: <%item.id%></p>
+<p>name: <%item.name%></p>
+
+```
+
+* printing a variable it will be displayed
+```
+<%= %>
+```
+```
+// index.ejs
+
+<% const item= {id:3, name:'onions'}> %>
+<p>id: <%=item.id%></p>
+<p>name: <%=item.name%></p>
 ```
