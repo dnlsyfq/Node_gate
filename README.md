@@ -5,7 +5,26 @@ $npm init
 $npm install
 $npm install express
 $npm install ejs
+$npm install nodemon
 $node app.js
+$nodemon app.js
+```
+
+```
+delete the task called test that was already written within scripts, and instead we will register a task called start
+
+Make it Easier Start Up nodemon
+
+//package.json
+
+windows
+"start": ".\\node_modules\\.bin\\nodemon app.js"
+
+macos
+"start": "./node_modules/.bin/nodemon app.js"
+
+
+$npm run start
 ```
 
 ### Routing
