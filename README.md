@@ -10,6 +10,17 @@ $node app.js
 $nodemon app.js
 ```
 
+> to connect to mysql
+```
+const mysql = require('mysql);
+app.use(express.static('public'));
+
+const connection = mysql.createConnection({
+    //database name,password
+})
+
+```
+
 ```
 delete the task called test that was already written within scripts, and instead we will register a task called start
 
