@@ -115,5 +115,23 @@ app.use(express.static('public'));
     </li>
 <% }); %>
 ```
+--- 
 
+# Basic of Node.js and NPM
 
+install
+```
+npm install lite-server --save-dev
+```
+
+package.json
+```
+"scripts":{
+    "start":"npm run lite",
+    "lite":"lite-server"
+}
+```
+start
+```
+npm start
+```
